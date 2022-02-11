@@ -1,19 +1,41 @@
 {
-  "name": "fkhua",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5050",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
-  },
-  "dependencies": {
-    "vue": "^3.2.29"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.1.0",
-    "eslint": "^8.5.0",
-    "eslint-plugin-vue": "^8.2.0",
-    "vite": "^2.7.13"
-  }
+    "name": "fkhua",
+    "version": "0.1.0",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.2",
+        "axios": "^0.25.0",
+        "bootstrap": "^5.1.3",
+        "bootstrap-vue": "^2.21.2",
+        "core-js": "^3.6.5",
+        "jquery": "^3.6.0",
+        "sweetalert2": "^11.1.9",
+        "vue": "^2.6.14",
+        "vue-loader": "^15.9.8",
+        "vue-moment": "^4.1.0",
+        "vue-router": "^3.2.0",
+        "vue-sweetalert2": "^5.0.2",
+        "vue2-editor": "^2.10.3",
+        "vuex": "^3.4.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "@vue/eslint-config-standard": "^5.1.2",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-template-compiler": "^2.6.11"
+    }
 }
