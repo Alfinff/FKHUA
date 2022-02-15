@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Template from '../views/Template.vue'
-import Home from '../views/Landing.vue'
 
 Vue.use(VueRouter)
 
@@ -9,16 +8,13 @@ const routes = [{
     path: '/',
     component: Template,
     children: [{
-        path: '/',
+        path: '',
         name: 'Home',
-        component: Home
+        component: () =>
+            import ('../views/Landing.vue')
     }]
 }]
 
-const router = new VueRouter({
-    mode: 'history',
-    base: process.env.BASE_URL,
-    routes
-})
+const router = new VueRouter({ mode: 'history', base: process.env.BASE_URL, routes })
 
 export default router
